@@ -1,0 +1,11 @@
+--- origsrc/libzapojit-0.0.3/src/Makefile.am	2013-03-08 07:54:39.000000000 -0600
++++ src/libzapojit-0.0.3/src/Makefile.am	2013-08-22 00:18:51.484031900 -0500
+@@ -58,7 +58,7 @@ AM_CPPFLAGS = \
+ 	$(SOUP_CFLAGS) \
+ 	$(NULL)
+ 
+-libzapojit_0_0_la_LDFLAGS =
++libzapojit_0_0_la_LDFLAGS = -no-undefined
+ 
+ libzapojit_0_0_la_LIBADD = \
+ 	$(GIO_LIBS) \

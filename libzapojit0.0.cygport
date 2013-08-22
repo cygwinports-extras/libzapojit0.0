@@ -1,0 +1,18 @@
+ORIG_PN="libzapojit"
+inherit gnome2
+
+NAME="libzapojit0.0"
+VERSION=0.0.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GObject SkyDrive/Hotmail API"
+DESCRIPTION="A GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs"
+
+PATCH_URI="0.0.3-no-undefined.patch"
+
+PKG_NAMES="${NAME}_0 ${NAME}-devel ${NAME}-doc girepository-Zpj0.0"
+libzapojit0_0_0_CONTENTS="usr/bin/cygzapojit-0.0-0.dll usr/share/doc/"
+libzapojit0_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libzapojit0_0_doc_CATEGORY="Doc"
+libzapojit0_0_doc_CONTENTS="usr/share/gtk-doc/html/libzapojit-0.0/"
+girepository_Zpj0_0_CONTENTS="usr/*/gir*/Zpj-0.0.*"
